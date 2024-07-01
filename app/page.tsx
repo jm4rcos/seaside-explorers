@@ -1,6 +1,7 @@
 import Image from "next/image";
 import BubbleCursor from "./components/bubble-cursor";
 import { GradientText } from "./components/gradient-text";
+import { BottomLines } from "./components/bottom-lines";
 
 export default function Home() {
   return (
@@ -21,24 +22,7 @@ export default function Home() {
           className="w-full top-0 z-50 asbolute h-full object-cover"
         />
       </div>
-      {/* <div className="w-full h-screen  object-cover relative bg-gradient-radial from-[#013058] to-[#000314]">
-        <Image
-          src="/images/scuba-diver.png"
-          alt="Seaside Explorers"
-          width={1920}
-          height={1080}
-          priority
-          className="mix-blend-overlay w-full top-0 z-50 asbolute h-full object-cover"
-        />
-        <Image
-          src="/images/banner.jpg"
-          alt="Seaside Explorers"
-          width={1920}
-          height={1080}
-          priority
-          className="w-full h-full object-cover"
-        />
-      </div> */}
+      <BottomLines />
     </div>
   );
 }
